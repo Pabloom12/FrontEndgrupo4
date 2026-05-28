@@ -1,11 +1,15 @@
+/* Estilos para el contenedor de tarjeta */
 .card {
   border: 2px solid #000000;
   border-radius: 5px;
 }
 
+/* Color de fondo de toda la página */
 body {
   background-color: #f1d8b6;
 }
 
+/* Estilo para el botón personalizado de la tarjeta */
 .botonmate {
+  /* Aquí se pueden agregar reglas como color, padding o borde */
 }
