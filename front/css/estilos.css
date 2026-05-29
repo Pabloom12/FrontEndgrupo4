@@ -6,7 +6,7 @@
 
 /* Color de fondo de toda la página */
 body {
-  background-color: #f1d8b6;
+  background-color: #f7ebda;
 }
 
 /* Estilo para el botón personalizado de la tarjeta */
@@ -19,5 +19,15 @@ body {
 }
 
 nav {
+  display: flex;
+  position:;
   background-color: white;
+}
+
+.cabecera {
+  width: 100%; /* Ocupa el ancho disponible... */ /* ...pero nunca va a medir más de 400px */
+  height: auto; /* Mantiene la proporción para que no se deforme */
+}
+.btnarticulos {
+  right: 0%;
 }

@@ -26,21 +26,35 @@
   </head>
   <body>
     <!-- Barra de navegación simple con el nombre del sitio -->
-    <nav><img
+    <nav><span><img
             src="/front/imagenes/titulo.png"
             width="100px"
             height="auto"
-            alt="titulo"/> </img>
+            alt="titulo"/> </img> </span>
+    <!-- Botón de hamburguesa -->
+    <span class="menu-icono" onclick="alternarMenu()">
+        <div class="barra"></div>
+        <div class="barra"></div>
+        <div class="barra"></div>
+    </span>
+    <!-- Enlaces del menú -->
+    <ul class="btnarticulos" id="articulosdisplay">
+        <li><a href="#">Mate</a></li>
+        <li><a href="#">Alfajor</a></li>
+        <li><a href="#">Asado</a></li>
+        <li><a href="#">Chivito</a></li>
+        <li><a href="#">Torta frita</a></li>
+    </ul>
           </nav>
     <main>
       <!-- Sección principal de cabecera con un contenedor Bootstrap -->
       <hero class="container my-5">
         <h1 class="">
           <!-- Imagen del título del sitio -->
-          <img
-            src="/front/imagenes/saborhd.png"
-            width="1200px"
-            height="1100px"
+          <img class="cabecera"
+            src="/front/imagenes/saborhdhd.png"
+            width="px"
+            height=""
             alt="titulo"
           />
         </h1>
