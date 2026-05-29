@@ -11,5 +11,7 @@ body {
 
 /* Estilo para el botón personalizado de la tarjeta */
 .botonmate {
+  background-color: #000000;
+  color: #ffffff;
   /* Aquí se pueden agregar reglas como color, padding o borde */
 }
