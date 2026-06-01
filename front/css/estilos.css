@@ -58,3 +58,89 @@ nav {
   right: 0%;
   position: absolute;
 }
+.footer-sabor-oriental {
+  background-color: #1a1a1a; /* Fondo oscuro elegante */
+  color: #e0e0e0;
+  padding: 40px 20px 20px 20px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Títulos de las secciones */
+.footer-section h3 {
+  color: #f39c12; /* Color dorado / naranja cálido */
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-section h4 {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-section p {
+  margin: 0 0 10px 0;
+}
+
+/* Enlaces y Listas */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #b0b0b0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #f39c12; /* Color al pasar el mouse */
+}
+
+/* Redes Sociales */
+.redes-sociales a {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* Barra Inferior de Créditos */
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+}
+
+/* ==========================================
+   RESPONSIVE (Adaptación a Celulares)
+   ========================================== */
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+  .redes-sociales a {
+    margin: 0 10px;
+  }
+}
