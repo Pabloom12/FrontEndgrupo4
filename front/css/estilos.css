@@ -58,11 +58,3 @@ nav {
   right: 0%;
   position: absolute;
 }
-.carousel-item {
-  min-height: 400px;
-}
-
-.carousel-item img {
-  max-height: 350px;
-  object-fit: cover;
-}
