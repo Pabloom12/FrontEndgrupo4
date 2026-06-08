@@ -78,6 +78,13 @@ body {
   right: 0%;
   position: absolute;
 }
+.container-bienvenida {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  height: 50vh; /* Ajusta la altura según tus necesidades */
+}
 .footer-sabor-oriental {
   background-color: #1a1a1a; /* Fondo oscuro elegante */
   color: #e0e0e0;
