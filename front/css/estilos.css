@@ -178,3 +178,27 @@ body {
 .dropdown-menu {
   background-color: #ccbaa2;
 }
+
+/* Espaciado entre secciones: carousel, grilla de artículos y footer */
+#carouselExampleDark {
+  margin-bottom: 2.5rem;
+}
+
+#grilla-articulos {
+  margin: 2rem 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.articulo1,
+.articulo2,
+.articulo3,
+.articulo4,
+.articulo5 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer-sabor-oriental {
+  margin-top: 2rem; /* separa el footer del contenido anterior */
+}
