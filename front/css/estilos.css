@@ -101,8 +101,21 @@ body {
 }
 
 .cabecera {
-  width: 100%; /* Ocupa el ancho disponible... */ /* ...pero nunca va a medir más de 400px */
+  margin: 0 auto;
+  width: 70%; /* Ocupa el ancho disponible... */ /* ...pero nunca va a medir más de 400px */
   height: auto; /* Mantiene la proporción para que no se deforme */
+
+  /* El degradado va desde negro sólido (visible) a la izquierda, hasta negro transparente a la derecha */
+  mask-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255) 30%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 .btnarticulos {
   right: 0%;
@@ -248,7 +261,7 @@ body {
 
 /* Espaciado entre secciones: carousel, grilla de artículos y footer */
 #carouselExampleDark {
-  margin-bottom: 200px;
+  margin-bottom: 2.5rem;
 }
 
 #grilla-articulos {
@@ -268,4 +281,9 @@ body {
 
 .footer-sabor-oriental {
   margin-top: 2rem; /* separa el footer del contenido anterior */
+}
+
+.container-bienvenida {
+  margin-bottom: 2rem; /* separa la sección de bienvenida del contenido siguiente */
+  margin-top: 2rem; /* separa la sección de bienvenida del contenido anterior */
 }
