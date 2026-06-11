@@ -71,8 +71,21 @@ body {
 }
 
 .cabecera {
-  width: 100%; /* Ocupa el ancho disponible... */ /* ...pero nunca va a medir más de 400px */
+  margin: 0 auto;
+  width: 70%; /* Ocupa el ancho disponible... */ /* ...pero nunca va a medir más de 400px */
   height: auto; /* Mantiene la proporción para que no se deforme */
+
+  /* El degradado va desde negro sólido (visible) a la izquierda, hasta negro transparente a la derecha */
+  mask-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255) 30%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 .btnarticulos {
   right: 0%;
