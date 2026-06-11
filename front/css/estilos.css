@@ -1,9 +1,7 @@
 /* Estilos para el contenedor de tarjeta */
 .bienvenida {
   text-align: center;
-  margin-top: 200px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-top: 20px;
   font-size: 24px;
   color: #000000;
   font-weight: bolder;
