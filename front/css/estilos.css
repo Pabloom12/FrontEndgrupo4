@@ -1,7 +1,9 @@
 /* Estilos para el contenedor de tarjeta */
 .bienvenida {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
   font-size: 24px;
   color: #000000;
   font-weight: bolder;
@@ -46,17 +48,6 @@ body {
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
-.cards-row::-webkit-scrollbar {
-  height: 8px;
-}
-.cards-row::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-.cards-row .card {
-  flex: 0 0 auto;
-  scroll-snap-align: center;
-}
 
 .navbar-expand-lg {
   display: flex;
@@ -84,6 +75,10 @@ body {
   margin-left: 200px;
   margin-right: 200px;
   height: 50vh; /* Ajusta la altura según tus necesidades */
+}
+.vision {
+  margin-left: 200px;
+  margin-right: 200px;
 }
 .footer-sabor-oriental {
   background-color: #1a1a1a; /* Fondo oscuro elegante */
@@ -181,7 +176,7 @@ body {
 
 /* Espaciado entre secciones: carousel, grilla de artículos y footer */
 #carouselExampleDark {
-  margin-bottom: 2.5rem;
+  margin-bottom: 200px;
 }
 
 #grilla-articulos {
