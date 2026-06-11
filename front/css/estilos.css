@@ -194,6 +194,7 @@ body {
 
 /* Espaciado entre secciones: carousel, grilla de artículos y footer */
 #carouselExampleDark {
+  margin-top: 2rem;
   margin-bottom: 2.5rem;
 }
 
@@ -214,4 +215,9 @@ body {
 
 .footer-sabor-oriental {
   margin-top: 2rem; /* separa el footer del contenido anterior */
+}
+
+.container-bienvenida {
+  margin-bottom: 2rem; /* separa la sección de bienvenida del contenido siguiente */
+  margin-top: 2rem; /* separa la sección de bienvenida del contenido anterior */
 }
