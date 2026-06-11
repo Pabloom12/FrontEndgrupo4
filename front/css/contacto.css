@@ -5,10 +5,21 @@
   font-size: 24px;
   color: #000000;
   font-weight: bolder;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
 }
 .card {
-  border: 2px solid #000000;
-  border-radius: 5px;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
 /* Color de fondo de toda la página */
@@ -27,10 +38,18 @@ body {
 .botonmate {
   background-color: #000000;
   color: #ffffff;
-  padding: 10px 18px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.botonmate:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 .indice {
   padding: 2rem 0;
@@ -56,6 +75,65 @@ body {
 .cards-row .card {
   flex: 0 0 auto;
   scroll-snap-align: center;
+}
+
+/* Estilos para el formulario de contacto */
+.shadow-elegant {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.form-input-styled {
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 10px !important;
+  padding: 12px 16px !important;
+  transition: all 0.3s ease;
+  background-color: #fafafa;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.form-input-styled:focus {
+  border-color: #000000 !important;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05) !important;
+  outline: none;
+}
+
+.form-label {
+  color: #333333;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.btn-styled {
+  padding: 12px 24px !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-styled:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.form-check-input {
+  border-radius: 6px;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 2px solid #d0d0d0;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-expand-lg {

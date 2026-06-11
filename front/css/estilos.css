@@ -5,10 +5,32 @@
   font-size: 24px;
   color: #000000;
   font-weight: bolder;
+  line-height: 2;
+  letter-spacing: 0.8px;
 }
 .card {
-  border: 2px solid #000000;
-  border-radius: 5px;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+.card img {
+  border-radius: 12px;
+  object-fit: cover;
+}
+.card-title {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+.card-text {
+  line-height: 1.7;
+  font-size: 0.95rem;
 }
 
 /* Color de fondo de toda la página */
@@ -16,21 +38,29 @@ body {
   background-color: #f7ebda;
   font-family: "Bebas Neue";
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #000000;
-  font-weight: 300;
-  margin-bottom: 25px;
   font-weight: bolder;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
 }
 
 /* Estilo para el botón personalizado de la tarjeta */
 .botonmate {
   background-color: #000000;
   color: #ffffff;
-  padding: 10px 18px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.botonmate:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 .indice {
   padding: 2rem 0;
@@ -97,6 +127,42 @@ body {
   margin-left: 200px;
   margin-right: 200px;
   height: 50vh; /* Ajusta la altura según tus necesidades */
+  padding: 20px;
+}
+
+/* Estilos para carousel */
+.carousel-item {
+  padding: 40px 0;
+}
+.carousel-item img {
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.carousel-item img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.carousel-item h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+.carousel-item p {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #555555;
+}
+.carousel-item a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.vision {
+  margin-left: 200px;
+  margin-right: 200px;
 }
 .footer-sabor-oriental {
   background-color: #1a1a1a; /* Fondo oscuro elegante */
@@ -194,7 +260,6 @@ body {
 
 /* Espaciado entre secciones: carousel, grilla de artículos y footer */
 #carouselExampleDark {
-  margin-top: 2rem;
   margin-bottom: 2.5rem;
 }
 
