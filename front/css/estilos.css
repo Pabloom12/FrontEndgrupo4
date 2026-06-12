@@ -280,3 +280,17 @@ body {
 .footer-sabor-oriental {
   margin-top: 2rem; /* separa el footer del contenido anterior */
 }
+
+/* Contenedor de Spotify */
+.spotify-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+  padding: 40px 20px;
+}
+
+.spotify-container iframe {
+  display: block;
+  max-width: 100%;
+}
