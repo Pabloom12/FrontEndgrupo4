@@ -305,3 +305,9 @@ body {
   display: block;
   max-width: 100%;
 }
+.background-image {
+  background-image: url("/front/imagenes/Fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
