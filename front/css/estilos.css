@@ -112,8 +112,19 @@ body {
 }
 
 .cabecera {
-  width: 100%; /* Ocupa el ancho disponible... */ /* ...pero nunca va a medir más de 400px */
-  height: auto; /* Mantiene la proporción para que no se deforme */
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.cabecera:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 .btnarticulos {
   right: 0%;
