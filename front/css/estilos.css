@@ -106,7 +106,7 @@ h6,
 
 .navbar-expand-lg {
   display: flex;
-  padding: 0 !important;
+  padding: 0 !important; /* El !important sirve para   */
   margin: 0;
   background-color: rgb(255, 255, 255);
 }
