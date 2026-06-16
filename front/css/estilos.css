@@ -325,6 +325,16 @@ h6,
   background-color: #ffffff00;
   position: relative;
 }
+.navbar-nav {
+  gap: 1rem;
+}
+.navbar-nav .nav-item {
+  margin-right: 0.5rem;
+}
+.nav-link {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
 .dropdown-item:hover {
   background-color: rgba(0, 0, 0, 0.08);
   border-radius: 8px;
