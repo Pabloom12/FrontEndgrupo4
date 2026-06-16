@@ -107,3 +107,12 @@ disponible.</p>`;
     console.error(error);
   }
 }
+document.querySelectorAll(".dropdown").forEach((dropdown) => {
+  dropdown.addEventListener("shown.bs.dropdown", () => {
+    const items = dropdown.querySelectorAll(".dropdown-menu li");
+
+    items.forEach((item, index) => {
+      item.style.animationDelay = `${index * 0.08}s`;
+    });
+  });
+});
