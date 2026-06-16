@@ -332,8 +332,11 @@ h6,
   background-color: rgba(0, 0, 0, 0.144);
 }
 .dropdown-menu {
-  background: rgba(204, 186, 162, 0.2);
-  backdrop-filter: blur(2px);
+  background: rgba(240, 174, 87, 0.5);
+  backdrop-filter: blur(5px);
+  background-image: url("/front/imagenes/menu.webp");
+  background-size: cover;
+  background-position: center;
 }
 .dropdown-menu li {
   opacity: 0;
