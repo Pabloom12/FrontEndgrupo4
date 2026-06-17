@@ -230,6 +230,10 @@ h6,
   color: inherit;
   cursor: pointer;
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) brightness(0.9);
+}
 .vision {
   margin-left: 200px;
   margin-right: 200px;
