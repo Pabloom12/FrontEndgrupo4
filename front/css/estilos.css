@@ -41,7 +41,7 @@ body {
   line-height: 1.7;
   color: #000000;
   font-weight: 400;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   transition: all 0.3s ease;
 }
 
@@ -199,7 +199,12 @@ h6,
 
 /* Estilos para carousel */
 .carousel-item {
-  padding: 40px 0;
+  background-size: cover;
+  background-position: center;
+
+  background-color: rgba(58, 250, 0, 0.192);
+  padding: 40px;
+  border-radius: 50px;
 }
 .carousel-item img {
   width: 100%;
