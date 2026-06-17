@@ -2,11 +2,10 @@
 .bienvenida {
   text-align: center;
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 50px;
   color: #000000;
   font-weight: bolder;
-  line-height: 2;
-  letter-spacing: 0.8px;
+  line-height: 1.5;
 }
 .card {
   border: none;
@@ -111,6 +110,15 @@ h6,
   background-color: rgb(255, 255, 255);
 }
 
+.container-bienvenida {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  height: 50vh; /* Ajusta la altura según tus necesidades */
+  padding: 50px;
+}
+
 .container-fluid::after {
   content: "";
   position: absolute;
@@ -187,14 +195,6 @@ h6,
 .btnarticulos {
   right: 0%;
   position: absolute;
-}
-.container-bienvenida {
-  display: flex;
-  justify-content: center;
-  margin-left: 200px;
-  margin-right: 200px;
-  height: 50vh; /* Ajusta la altura según tus necesidades */
-  padding: 20px;
 }
 
 /* Estilos para carousel */
@@ -413,4 +413,10 @@ h6,
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.logosabor {
+}
+.logouru {
+  display: flex;
 }
