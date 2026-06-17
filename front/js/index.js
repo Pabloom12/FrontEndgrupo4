@@ -115,4 +115,22 @@ document.querySelectorAll(".dropdown").forEach((dropdown) => {
       item.style.animationDelay = `${index * 0.08}s`;
     });
   });
+  document.addEventListener("DOMContentLoaded", () => {
+    const video = document.getElementById("video-bucle");
+
+    // Lista con las rutas de tus videos en el orden que quieras
+    const listaVideos = ["front/imagenes/mate.mp4", "front/imagenes/asado.mp4"];
+
+    let indiceActual = 0;
+
+    // Escuchamos cuando el video actual termina
+    video.addEventListener("ended", () => {
+      // Avanzamos al siguiente índice, si llega al final vuelve a 0
+      indiceActual = (indiceActual + 1) % listaVideos.length;
+
+      // Cambiamos la fuente del video y lo reproducimos
+      video.src = listaVideos[indiceActual];
+      video.play();
+    });
+  });
 });

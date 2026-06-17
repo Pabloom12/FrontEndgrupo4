@@ -2,11 +2,10 @@
 .bienvenida {
   text-align: center;
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 50px;
   color: #000000;
   font-weight: bolder;
-  line-height: 2;
-  letter-spacing: 0.8px;
+  line-height: 1.5;
 }
 .card {
   border: none;
@@ -111,6 +110,15 @@ h6,
   background-color: rgb(255, 255, 255);
 }
 
+.container-bienvenida {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  height: 50vh; /* Ajusta la altura según tus necesidades */
+  padding: 50px;
+}
+
 .container-fluid::after {
   content: "";
   position: absolute;
@@ -188,14 +196,6 @@ h6,
   right: 0%;
   position: absolute;
 }
-.container-bienvenida {
-  display: flex;
-  justify-content: center;
-  margin-left: 200px;
-  margin-right: 200px;
-  height: 50vh; /* Ajusta la altura según tus necesidades */
-  padding: 20px;
-}
 
 /* Estilos para carousel */
 .carousel-item {
@@ -234,6 +234,10 @@ h6,
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) brightness(0.9);
 }
 .vision {
   margin-left: 200px;
@@ -330,6 +334,16 @@ h6,
   background-color: #ffffff00;
   position: relative;
 }
+.navbar-nav {
+  gap: 1rem;
+}
+.navbar-nav .nav-item {
+  margin-right: 0.5rem;
+}
+.nav-link {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
 .dropdown-item:hover {
   background-color: rgba(0, 0, 0, 0.08);
   border-radius: 8px;
@@ -408,4 +422,10 @@ h6,
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.logosabor {
+}
+.logouru {
+  display: flex;
 }

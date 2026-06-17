@@ -28,16 +28,11 @@
   <body class="background-image">
     <!-- Barra de navegación simple con el nombre del sitio -->
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+      <div class="container-fluid container">
         <a class="navbar-brand" href="#">
           <img
+            class="logosabor"
             src="front/imagenes/titulo.png"
-            width="100"
-            height="auto"
-            alt="Logo"
-          />
-          <img
-            src="front/imagenes/uru.png"
             width="100"
             height="auto"
             alt="Logo"
@@ -114,12 +109,15 @@
                 <li><a class="dropdown-item" href="#">Martha</a></li>
                 <li><a class="dropdown-item" href="#">Santiago</a></li>
                 <li><a class="dropdown-item" href="#">Pablo</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Grupo 4 </a>
-                </li>
               </ul>
             </li>
+            <img
+              class="logouru"
+              src="front/imagenes/uru.png"
+              width="100"
+              height="auto"
+              alt="Logo"
+            />
           </ul>
         </div>
       </div>
@@ -143,11 +141,11 @@
               </div>
               <div class="video-card-media">
                 <video
+                  id="video-bucle"
                   class="video-card-video"
                   src="front/imagenes/mate.mp4"
                   autoplay
                   muted
-                  loop
                   playsinline
                 ></video>
               </div>
@@ -155,7 +153,8 @@
           </div>
         </div>
       </hero>
-      <div class="container">
+
+      <section class="container-bienvenida">
         <p class="bienvenida">
           ¡Bienvenidos a Sabor Oriental! "Nuestra misión es preservar y
           compartir la auténtica tradición gastronómica uruguaya a través de
@@ -166,7 +165,7 @@
           Queremos que cada bocado y cada cebada sean una experiencia que
           conecte a nuestra gente con lo mejor de nuestra cultura."
         </p>
-      </div>
+      </section>
 
       <div id="carouselExampleDark" class="carousel slide">
         <div class="carousel-inner container">
