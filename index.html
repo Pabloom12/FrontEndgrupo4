@@ -125,36 +125,30 @@
     <main>
       <!-- Sección principal de cabecera con un contenedor Bootstrap -->
       <hero class="container my-5">
-        <div class="row g-4 align-items-start">
-          <div class="col-lg-8">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
             <img
               class="cabecera mx-auto d-block"
               src="front/imagenes/Sabormejorcalidad.jpg"
               alt="titulo"
             />
           </div>
-          <div class="col-lg-4">
-            <div class="video-card shadow-sm rounded-4 p-3 bg-white">
-              <div class="video-card-header mb-3">
-                <h2>Mate en movimiento</h2>
-                <p>Una pequeña probada del ritual de mate</p>
-              </div>
-              <div class="video-card-media">
-                <video
-                  id="video-bucle"
-                  class="video-card-video"
-                  src="front/imagenes/mate.mp4"
-                  autoplay
-                  muted
-                  playsinline
-                ></video>
-              </div>
-            </div>
-          </div>
         </div>
       </hero>
+      <section class="video-spotlight container mb-4">
+        <div class="video-card shadow-sm rounded-4 p-3">
+          <video
+            id="video-bucle"
+            class="video-card-video"
+            src="front/imagenes/mate.mp4"
+            autoplay
+            muted
+            playsinline
+          ></video>
+        </div>
+      </section>
 
-      <section class="container-bienvenida">
+      <div>
         <p class="bienvenida">
           ¡Bienvenidos a Sabor Oriental! "Nuestra misión es preservar y
           compartir la auténtica tradición gastronómica uruguaya a través de
@@ -165,8 +159,7 @@
           Queremos que cada bocado y cada cebada sean una experiencia que
           conecte a nuestra gente con lo mejor de nuestra cultura."
         </p>
-      </section>
-
+      </div>
       <div id="carouselExampleDark" class="carousel slide">
         <div class="carousel-inner container">
           <div class="carousel-item active">
