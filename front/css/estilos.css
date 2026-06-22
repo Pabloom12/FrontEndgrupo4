@@ -24,7 +24,10 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.cabecera {
+  width: 1000px;
+  height: 100%;
+}
 /* --- VIDEO --- */
 .video-card {
   width: 100%;
