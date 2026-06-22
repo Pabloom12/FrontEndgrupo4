@@ -20,7 +20,37 @@ body {
   padding: 0 20px;
 }
 
+.section-block {
+  display: flex;
+  justify-content: center;
+}
+
+/* --- VIDEO --- */
+.video-card {
+  width: 100%;
+  max-width: 560px;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.video-card-video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 16px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 /* --- CAROUSEL --- */
+.carousel-wrapper {
+  width: 100%;
+}
+
+.carousel-wrapper .carousel {
+  width: 100%;
+  max-width: 1100px;
+}
+
 .carousel-item {
   background-color: rgba(
     255,
@@ -31,6 +61,15 @@ body {
   padding: 40px;
   border-radius: 20px;
   transition: transform 0.5s ease;
+}
+
+.carousel-item .container {
+  max-width: 960px;
+}
+
+.carousel.carousel-dark .carousel-control-prev-icon,
+.carousel.carousel-dark .carousel-control-next-icon {
+  filter: invert(1) grayscale(100%);
 }
 
 .carousel-item h2 {
@@ -66,5 +105,13 @@ body {
   }
   .bienvenida {
     font-size: 1.1rem;
+  }
+
+  .video-card {
+    max-width: 100%;
+  }
+
+  .carousel-item {
+    padding: 24px;
   }
 }
