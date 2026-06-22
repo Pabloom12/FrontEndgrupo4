@@ -117,7 +117,13 @@ body {
   font-size: 1.1rem;
   color: #444;
 }
-
+.carrousel-imagen {
+  display: block;
+  width: 403px;
+  height: 280px;
+  border-radius: 16px;
+  object-fit: auto;
+}
 /* --- NAVBAR --- */
 .navbar {
   background-color: rgba(255, 255, 255, 0.95);
