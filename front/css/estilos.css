@@ -55,6 +55,82 @@ body {
   margin-bottom: 0;
 }
 
+.article-english {
+  max-width: 860px;
+  padding: 24px 20px;
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 28px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+}
+
+.article-english .article-hero-image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.article-english .article-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 0.35rem;
+  color: #2d2218;
+}
+
+.article-english .article-byline {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6a5544;
+  letter-spacing: 0.02em;
+}
+
+.article-english .article-section {
+  margin-top: 1.75rem;
+}
+
+.article-english .article-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #4a3627;
+}
+
+.article-english .article-section p,
+.article-english .article-sources li {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #2f2a24;
+}
+
+.article-english .article-section p {
+  margin-bottom: 0.9rem;
+}
+
+.article-english .article-sources {
+  text-align: left;
+}
+
+.article-english .article-sources ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+}
+
+.article-english .article-sources a {
+  color: #8c4f25;
+  text-decoration: none;
+}
+
+.article-english .article-sources a:hover {
+  text-decoration: underline;
+}
+
 .section-block {
   display: flex;
   justify-content: center;
@@ -104,8 +180,7 @@ body {
 
 .carousel.carousel-dark .carousel-control-prev-icon,
 .carousel.carousel-dark .carousel-control-next-icon {
-  filter: invert(1) black(100%);
-  color: black;
+  filter: invert(1) grayscale(100%);
 }
 
 .carousel-item h2 {
