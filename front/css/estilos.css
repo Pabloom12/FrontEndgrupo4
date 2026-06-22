@@ -20,6 +20,41 @@ body {
   padding: 0 20px;
 }
 
+/* --- ARTICULO --- */
+.article-page {
+  display: flex;
+  justify-content: center;
+}
+
+.article-content {
+  width: 100%;
+  max-width: 760px;
+}
+
+.article-content #titulo-articulo {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.article-content .article-author {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  text-align: right;
+  margin-bottom: 12px;
+}
+
+.article-content .article-body {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: justify;
+  text-indent: 1em;
+  margin-bottom: 0;
+}
+
 .section-block {
   display: flex;
   justify-content: center;
