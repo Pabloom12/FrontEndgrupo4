@@ -135,6 +135,23 @@ body {
   margin-top: 60px;
   padding: 60px 20px;
 }
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerizquierda {
+  text-align: left;
+}
+.footerderecha {
+  text-align: right;
+}
+.footer-bottom {
+  text-align: center;
+}
 
 /* --- PEQUEÑO AJUSTE DE RESPONSIVE --- */
 @media (max-width: 768px) {
