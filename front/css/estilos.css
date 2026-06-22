@@ -1,428 +1,70 @@
-/* Estilos para el contenedor de tarjeta */
-.bienvenida {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 30px;
-  color: #000000;
-  font-weight: bolder;
-  line-height: 1.8;
-}
-.card {
-  border: none;
-  border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-}
-.card img {
-  border-radius: 12px;
-  object-fit: cover;
-}
-.card-title {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  margin-bottom: 12px;
-}
-.card-text {
-  line-height: 1.7;
-  font-size: 0.95rem;
-}
-
-/* Color de fondo de toda la página */
+/* --- LIMPIEZA GENERAL --- */
 body {
   background-color: #f7ebda;
   font-family: "Inter", sans-serif;
-  font-size: 25px;
-  line-height: 1.7;
-  font-weight: bold;
-  color: #000000;
-  font-weight: 400;
-  margin-bottom: 0px;
-  transition: all 0.3s ease;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.navbar-brand,
-.card-title,
-.footer-section h3,
-.footer-section h4,
-#titulo-articulo {
-  font-family: "Playfair Display", serif;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-
-/* Estilo para el botón personalizado de la tarjeta */
-.botonmate {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-.botonmate:hover {
-  background-color: #333333;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-.indice {
-  padding: 2rem 0;
-}
-.cards-row {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 1.5rem;
-  overflow-x: auto;
-  padding: 1rem 1.5rem 1rem;
-  margin: 0 auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-.cards-row::-webkit-scrollbar {
-  height: 8px;
-}
-.cards-row::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-.cards-row .card {
-  flex: 0 0 auto;
-  scroll-snap-align: center;
-}
-
-.navbar-expand-lg {
-  display: flex;
-  padding: 0 !important; /* El !important sirve para   */
-  margin: 0;
-  background-color: rgb(255, 255, 255);
-}
-
-.container-bienvenida {
-  display: flex;
-  justify-content: center;
-  margin-left: 200px;
-  margin-right: 200px;
-  height: 50vh; /* Ajusta la altura según tus necesidades */
-  padding: 50px;
-}
-
-.container-fluid::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  z-index: 1;
-  pointer-events: none;
-  background: linear-gradient(
-    to right,
-    transparent 0,
-    #000 100px,
-    #000 calc(100% - 100px),
-    transparent 100%
-  );
-}
-
-.cabecera {
-  width: 100%;
-  height: auto;
-  max-width: 900px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  transition: all 0.3s ease;
-}
-
-.cabecera:hover {
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-.video-spotlight {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.video-card {
-  width: min(100%, 560px);
-  background: linear-gradient(180deg, #e4d3b1 0%, #d9c39b 100%);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 1.25rem;
-}
-
-.video-card-video {
-  width: 100%;
-  display: block;
-  border-radius: 1rem;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  background: #d9c39b;
-}
-
-@media (max-width: 992px) {
-  .video-card {
-    width: min(100%, 480px);
-  }
-}
-
-@media (max-width: 768px) {
-  .video-spotlight {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-
-.btnarticulos {
-  right: 0%;
-  position: absolute;
-}
-
-/* Estilos para carousel */
-.carousel-item {
-  background-size: cover;
-  background-position: center;
-
-  background-color: rgba(58, 250, 0, 0.192);
-  padding: 40px;
-  border-radius: 50px;
-}
-.carousel-item img {
-  width: 100%;
-  height: 440px;
-  min-height: 380px;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-.carousel-item img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-.carousel-item h2 {
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-  font-size: 2rem;
-}
-.carousel-item p {
-  line-height: 1.8;
-  font-size: 1.5rem;
-  color: #555555;
-}
-.carousel-item a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1) brightness(0.9);
-}
-.vision {
-  margin-left: 200px;
-  margin-right: 200px;
-  text-align: center;
-}
-.footer-sabor-oriental {
-  background-color: #1a1a1a; /* Fondo oscuro elegante */
-  color: #e0e0e0;
-  padding: 40px 20px 20px 20px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 18px; /* Reduje de 25px a 18px: 25px es muy grande para lectura web */
   line-height: 1.6;
+  color: #333; /* Un gris oscuro es más profesional que negro puro (#000) */
+  font-weight: 400;
 }
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-/* Títulos de las secciones */
-.footer-section h3 {
-  color: #f39c12; /* Color dorado / naranja cálido */
-  font-size: 22px;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
-.footer-section h4 {
-  color: #ffffff;
-  font-size: 16px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.footer-section p {
-  margin: 0 0 10px 0;
-}
-
-/* Enlaces y Listas */
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 8px;
-}
-
-.footer-section a {
-  color: #b0b0b0;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-section a:hover {
-  color: #f39c12; /* Color al pasar el mouse */
-}
-
-/* Redes Sociales */
-.redes-sociales a {
-  display: inline-block;
-  margin-right: 15px;
-  font-weight: bold;
-}
-
-/* Barra Inferior de Créditos */
-.footer-bottom {
-  border-top: 1px solid #333;
-  margin-top: 30px;
-  padding-top: 20px;
+/* --- TEXTO DE BIENVENIDA --- */
+.bienvenida {
   text-align: center;
-  font-size: 12px;
-  color: #777;
+  max-width: 800px; /* Evita que el texto se estire demasiado en pantallas grandes */
+  margin: 40px auto;
+  font-size: 1.25rem;
+  font-style: italic; /* Da un toque editorial/revista */
+  color: #2c2c2c;
+  line-height: 1.6;
+  padding: 0 20px;
 }
 
-/* ==========================================
-   RESPONSIVE (Adaptación a Celulares)
-   ========================================== */
-@media (max-width: 768px) {
-  .footer-container {
-    text-align: center;
-  }
-  .redes-sociales a {
-    margin: 0 10px;
-  }
+/* --- CAROUSEL --- */
+.carousel-item {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Más limpio que el verde actual */
+  padding: 40px;
+  border-radius: 20px;
+  transition: transform 0.5s ease;
 }
+
+.carousel-item h2 {
+  color: #d35400; /* Color temático más cálido */
+  margin-bottom: 20px;
+}
+
+.carousel-item p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* --- NAVBAR --- */
 .navbar {
-  background-color: #ffffff00;
-  position: relative;
-}
-.navbar-nav {
-  gap: 1rem;
-}
-.navbar-nav .nav-item {
-  margin-right: 0.5rem;
-}
-.nav-link {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-.dropdown-item:hover {
-  background-color: rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
-  color: #000;
-}
-.nav-item:hover {
-  border-radius: 50px;
-  background-color: rgba(0, 0, 0, 0.144);
-}
-.dropdown-menu {
-  background: rgba(240, 174, 87, 0.5);
-  backdrop-filter: blur(5px);
-  background-image: url("/front/imagenes/menu.webp");
-  background-size: cover;
-  background-position: center;
-}
-.dropdown-menu li {
-  opacity: 0;
-  transform: translateY(-10px);
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 10px 0 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.dropdown-menu.show li {
-  animation: aparecer 0.3s ease forwards;
-}
-
-@keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* Espaciado entre secciones: carousel, grilla de artículos y footer */
-#carouselExampleDark {
-  margin-bottom: 200px;
-}
-
-#grilla-articulos {
-  margin: 2rem 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.articulo1,
-.articulo2,
-.articulo3,
-.articulo4,
-.articulo5 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
+/* --- FOOTER --- */
+/* Unifica tus dos etiquetas <footer> y simplifica */
 .footer-sabor-oriental {
-  margin-top: 2rem; /* separa el footer del contenido anterior */
+  background-color: #1a1a1a;
+  color: #ccc;
+  margin-top: 60px;
+  padding: 60px 20px;
 }
 
-/* Contenedor de Spotify */
-.spotify-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 60px 0;
-  padding: 40px 20px;
-}
-
-.spotify-container iframe {
-  display: block;
-  max-width: 100%;
-}
-.background-image {
-  background-image: url("/front/imagenes/Fondo.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.logosabor {
-}
-.logouru {
-  display: flex;
+/* --- PEQUEÑO AJUSTE DE RESPONSIVE --- */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .bienvenida {
+    font-size: 1.1rem;
+  }
 }
