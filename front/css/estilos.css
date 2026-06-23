@@ -31,7 +31,7 @@ body {
   max-width: 760px;
 }
 
-.article-content #titulo-articulo {
+.article-content:not(.article-english):not(.article-dynamic) #titulo-articulo {
   font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -39,14 +39,14 @@ body {
   margin-bottom: 8px;
 }
 
-.article-content .article-author {
+.article-content:not(.article-english):not(.article-dynamic) .article-author {
   font-family: Arial, sans-serif;
   font-size: 12px;
   text-align: right;
   margin-bottom: 12px;
 }
 
-.article-content .article-body {
+.article-content:not(.article-english):not(.article-dynamic) .article-body {
   font-family: Arial, sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -55,7 +55,8 @@ body {
   margin-bottom: 0;
 }
 
-.article-english {
+.article-english,
+.article-dynamic {
   max-width: 860px;
   padding: 24px 20px;
   background: rgba(255, 255, 255, 0.72);
@@ -70,7 +71,8 @@ body {
   display: block;
 }
 
-.article-english .article-title {
+.article-english .article-title,
+.article-dynamic .article-title {
   font-family: "Playfair Display", serif;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
@@ -79,7 +81,8 @@ body {
   color: #2d2218;
 }
 
-.article-english .article-byline {
+.article-english .article-byline,
+.article-dynamic .article-byline {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -87,11 +90,13 @@ body {
   letter-spacing: 0.02em;
 }
 
-.article-english .article-section {
+.article-english .article-section,
+.article-dynamic .article-section {
   margin-top: 1.75rem;
 }
 
-.article-english .article-section h2 {
+.article-english .article-section h2,
+.article-dynamic .article-section h2 {
   font-family: "Playfair Display", serif;
   font-size: 1.45rem;
   font-weight: 700;
@@ -100,34 +105,41 @@ body {
 }
 
 .article-english .article-section p,
-.article-english .article-sources li {
+.article-english .article-sources li,
+.article-dynamic .article-section p,
+.article-dynamic .article-sources li {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   line-height: 1.8;
   color: #2f2a24;
 }
 
-.article-english .article-section p {
+.article-english .article-section p,
+.article-dynamic .article-section p {
   margin-bottom: 0.9rem;
 }
 
-.article-english .article-sources {
+.article-english .article-sources,
+.article-dynamic .article-sources {
   text-align: left;
 }
 
-.article-english .article-sources ul {
+.article-english .article-sources ul,
+.article-dynamic .article-sources ul {
   display: inline-block;
   text-align: left;
   margin: 0 auto;
   padding-left: 1.25rem;
 }
 
-.article-english .article-sources a {
+.article-english .article-sources a,
+.article-dynamic .article-sources a {
   color: #8c4f25;
   text-decoration: none;
 }
 
-.article-english .article-sources a:hover {
+.article-english .article-sources a:hover,
+.article-dynamic .article-sources a:hover {
   text-decoration: underline;
 }
 
