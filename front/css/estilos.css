@@ -180,7 +180,8 @@ body {
 
 .carousel.carousel-dark .carousel-control-prev-icon,
 .carousel.carousel-dark .carousel-control-next-icon {
-  filter: invert(1) grayscale(100%);
+  filter: invert(1) black(100%);
+  color: black;
 }
 
 .carousel-item h2 {
