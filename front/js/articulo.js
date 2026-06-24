@@ -18,6 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("autor-articulo").textContent = articulo.autor;
       document.getElementById("descripcion-articulo").textContent =
         articulo.descripcion;
+
+      // 4. NUEVO: Lógica para cargar la imagen
+      const imgElement = document.getElementById("imagen-articulo");
+
+      // Verificamos si el backend envió el campo 'imagen'
+      if (articulo.imagen) {
+        // Armamos la ruta hacia la carpeta public del servidor
+        imgElement.src = `http://localhost:3000/${articulo.imagen}`;
+        imgElement.style.display = "block"; // Hacemos visible la imagen
+      } else {
+        // Si el artículo no tiene imagen (ej: Torta Frita), la mantenemos oculta
+        imgElement.style.display = "none";
+      }
     })
     .catch((error) => {
       console.error("Error:", error);
