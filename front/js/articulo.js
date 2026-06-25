@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // 3. Mostrar el contenido en el HTML
       document.getElementById("titulo-articulo").textContent = articulo.titulo;
       document.getElementById("autor-articulo").textContent = articulo.autor;
-      document.getElementById("descripcion-articulo").textContent =
+      document.getElementById("descripcion-articulo").innerHTML =
         articulo.descripcion;
 
       // 4. NUEVO: Lógica para cargar la imagen
