@@ -310,3 +310,10 @@ body {
     margin-top: 0.35rem;
   }
 }
+img {
+  border-radius: 15px;
+}
+.imgmate {
+  object-fit: cover;
+  padding: 10px;
+}
