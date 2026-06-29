@@ -332,3 +332,11 @@ img {
   object-fit: cover;
   padding: 10px;
 }
+#clima {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}

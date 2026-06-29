@@ -295,3 +295,12 @@ h6,
 .footer-sabor-oriental {
   margin-top: 2rem; /* separa el footer del contenido anterior */
 }
+
+#clima {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
