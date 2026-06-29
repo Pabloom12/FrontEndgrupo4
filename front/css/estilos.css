@@ -1,173 +1,334 @@
-/* Estilos para el contenedor de tarjeta */
-.bienvenida {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 24px;
-  color: #000000;
-  font-weight: bolder;
-}
-.card {
-  border: 2px solid #000000;
-  border-radius: 5px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-/* Color de fondo de toda la página */
+/* --- LIMPIEZA GENERAL --- */
 body {
   background-color: #f7ebda;
-  font-family: "Bebas Neue";
-  font-size: 18px;
-  line-height: 1.5;
-  color: #000000;
-  font-weight: 300;
-  margin-bottom: 25px;
-  font-weight: bolder;
-}
-
-/* Estilo para el botón personalizado de la tarjeta */
-.botonmate {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 10px 18px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.indice {
-  padding: 2rem 0;
-}
-.cards-row {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 1.5rem;
-  overflow-x: auto;
-  padding: 1rem 1.5rem 1rem;
-  margin: 0 auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-.cards-row::-webkit-scrollbar {
-  height: 8px;
-}
-.cards-row::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-.cards-row .card {
-  flex: 0 0 auto;
-  scroll-snap-align: center;
-}
-
-.navbar-expand-lg {
-  display: flex;
-  padding: 0 !important;
-  margin: 0;
-  background-color: rgb(255, 255, 255);
-}
-.container-fluid {
-  display: flex;
-  padding: 0 !important;
-  margin: 0;
-}
-
-.cabecera {
-  width: 100%; /* Ocupa el ancho disponible... */ /* ...pero nunca va a medir más de 400px */
-  height: auto; /* Mantiene la proporción para que no se deforme */
-}
-.btnarticulos {
-  right: 0%;
-  position: absolute;
-}
-.footer-sabor-oriental {
-  background-color: #1a1a1a; /* Fondo oscuro elegante */
-  color: #e0e0e0;
-  padding: 40px 20px 20px 20px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px; /* Reduje de 25px a 18px: 25px es muy grande para lectura web */
   line-height: 1.6;
+  color: #333; /* Un gris oscuro es más profesional que negro puro (#000) */
+  font-weight: 400;
 }
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+/* --- TEXTO DE BIENVENIDA --- */
+.bienvenida {
+  text-align: center;
+  max-width: 800px; /* Evita que el texto se estire demasiado en pantallas grandes */
+  margin: 40px auto;
+  font-size: 1.25rem;
+  font-style: italic; /* Da un toque editorial/revista */
+  color: #2c2c2c;
+  line-height: 1.6;
+  padding: 0 20px;
 }
 
-/* Títulos de las secciones */
-.footer-section h3 {
-  color: #f39c12; /* Color dorado / naranja cálido */
-  font-size: 22px;
-  margin-bottom: 15px;
-  font-weight: bold;
+/* --- TEXTO DE ARTICULOS --- */
+
+p {
+  text-align: justify;
+}
+.article-title {
+  text-align: center;
+}
+.descripcion-articulo {
+  text-align: justify;
+  text-indent: 1.5em;
+  margin-bottom: 1.2em;
+}
+.article-page {
+  display: flex;
+  justify-content: center;
 }
 
-.footer-section h4 {
-  color: #ffffff;
-  font-size: 16px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.article-content {
+  width: 100%;
+  max-width: 760px;
 }
 
-.footer-section p {
-  margin: 0 0 10px 0;
-}
-
-/* Enlaces y Listas */
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-section ul li {
+.article-content:not(.article-english):not(.article-dynamic) #titulo-articulo {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
   margin-bottom: 8px;
 }
 
-.footer-section a {
-  color: #b0b0b0;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-section a:hover {
-  color: #f39c12; /* Color al pasar el mouse */
-}
-
-/* Redes Sociales */
-.redes-sociales a {
-  display: inline-block;
-  margin-right: 15px;
-  font-weight: bold;
-}
-
-/* Barra Inferior de Créditos */
-.footer-bottom {
-  border-top: 1px solid #333;
-  margin-top: 30px;
-  padding-top: 20px;
-  text-align: center;
+.article-content:not(.article-english):not(.article-dynamic) {
+  font-family: Arial, sans-serif;
   font-size: 12px;
-  color: #777;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.article-author {
+  text-align: center;
+}
+.article-content:not(.article-english):not(.article-dynamic) .article-body {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: justify;
+  text-indent: 1em;
+  margin-bottom: 0;
 }
 
-/* ==========================================
-   RESPONSIVE (Adaptación a Celulares)
-   ========================================== */
-@media (max-width: 768px) {
-  .footer-container {
-    text-align: center;
-  }
-  .redes-sociales a {
-    margin: 0 10px;
-  }
+.article-english,
+.article-dynamic {
+  max-width: 860px;
+  padding: 24px 20px;
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 28px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
 }
+
+.article-english .article-hero-image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.article-english .article-title,
+.article-dynamic .article-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 0.35rem;
+  color: #2d2218;
+  text-align: center;
+}
+
+.article-english .article-byline,
+.article-dynamic .article-byline {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6a5544;
+  letter-spacing: 0.02em;
+}
+
+.article-english .article-section,
+.article-dynamic .article-section {
+  margin-top: 1.75rem;
+}
+
+.article-english .article-section h2,
+.article-dynamic .article-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #4a3627;
+}
+
+.article-english .article-section p,
+.article-english .article-sources li,
+.article-dynamic .article-section p,
+.article-dynamic .article-sources li {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #2f2a24;
+}
+
+.article-english .article-section p,
+.article-dynamic .article-section p {
+  margin-bottom: 0.9rem;
+}
+
+.article-english .article-sources,
+.article-dynamic .article-sources {
+  text-align: left;
+}
+
+.article-english .article-sources ul,
+.article-dynamic .article-sources ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+}
+
+.article-english .article-sources a,
+.article-dynamic .article-sources a {
+  color: #8c4f25;
+  text-decoration: none;
+}
+
+.article-english .article-sources a:hover,
+.article-dynamic .article-sources a:hover {
+  text-decoration: underline;
+}
+
+.section-block {
+  display: flex;
+  justify-content: center;
+}
+
+/* --- VIDEO --- */
+.video-card {
+  width: 100%;
+  max-width: 560px;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.video-card-video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 16px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* --- CAROUSEL --- */
+.carousel-wrapper {
+  width: 100%;
+}
+
+.carousel-wrapper .carousel {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.carousel-item {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Más limpio que el verde actual */
+  padding: 40px;
+  border-radius: 20px;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item .container {
+  max-width: 960px;
+}
+
+.carousel.carousel-dark .carousel-control-prev-icon,
+.carousel.carousel-dark .carousel-control-next-icon {
+  filter: invert(1) black(100%);
+  color: black;
+}
+
+.carousel-item h2 {
+  color: #d35400; /* Color temático más cálido */
+  margin-bottom: 20px;
+}
+
+.carousel-item p {
+  font-size: 1.1rem;
+  color: #444;
+}
+.carrousel-imagen {
+  display: block;
+  width: 403px;
+  height: 280px;
+  border-radius: 16px;
+  object-fit: auto;
+}
+/* --- NAVBAR --- */
 .navbar {
-  background-color: #ffffff00;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 10px 0 !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
 
-.dropdown-menu {
-  background-color: #ccbaa2;
+.navbar .navbar-nav {
+  gap: 0.4rem;
+}
+
+.navbar .nav-link {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.05rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  letter-spacing: 0.03em;
+}
+
+.navbar .dropdown-menu {
+  margin-top: 0.65rem;
+  padding: 0.5rem 0;
+}
+
+.navbar .dropdown-item {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  padding: 0.55rem 1.1rem;
+}
+
+.navbar .nav-link,
+.navbar .dropdown-item {
+  line-height: 1.2;
+}
+.navbar a:hover {
+  /* Aumenta este valor para separar más o menos las letras */
+  letter-spacing: 5px;
+  color: #0171e9;
+  transition: all 0.5s ease;
+}
+
+/* --- FOOTER --- */
+/* Unifica tus dos etiquetas <footer> y simplifica */
+.footer-sabor-oriental {
+  background-color: #1a1a1a;
+  color: #ccc;
+  margin-top: 60px;
+  padding: 60px 20px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerizquierda {
+  text-align: left;
+}
+.footerderecha {
+  text-align: right;
+}
+.footer-bottom {
+  text-align: center;
+}
+
+/* --- PEQUEÑO AJUSTE DE RESPONSIVE --- */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .bienvenida {
+    font-size: 1.1rem;
+  }
+
+  .video-card {
+    max-width: 100%;
+  }
+
+  .carousel-item {
+    padding: 24px;
+  }
+
+  .navbar .navbar-nav {
+    gap: 0;
+  }
+
+  .navbar .nav-link {
+    padding: 0.55rem 0.25rem;
+  }
+
+  .navbar .dropdown-menu {
+    margin-top: 0.35rem;
+  }
+}
+img {
+  border-radius: 15px;
+}
+.imgmate {
+  object-fit: cover;
+  padding: 10px;
 }

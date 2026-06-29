@@ -15,16 +15,23 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Estilos personalizados del proyecto -->
     <link rel="stylesheet" href="front/css/estilos.css" />
   </head>
-  <body>
+  <body class="background-image">
     <!-- Barra de navegación simple con el nombre del sitio -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
+            class="logosabor"
             src="front/imagenes/titulo.png"
             width="100"
             height="auto"
@@ -43,14 +50,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html"
-                >Inicio</a
+                >INICIO</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -60,17 +67,29 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Sabores
+                SABORES
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Asado</a></li>
-                <li><a class="dropdown-item" href="#">Torta frita</a></li>
-                <li><a class="dropdown-item" href="#">Chivito</a></li>
-                <li><a class="dropdown-item" href="#">Alfajor</a></li>
-                <li><a class="dropdown-item" href="#">Mate</a></li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="/articulo.html?id=1"
+                    >Torta Frita</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/articulo.html?id=2"
+                    >Postre Chajá</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/articulo.html?id=3">Asado</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/articulo.html?id=4"
+                    >Alfajor</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/articulo.html?id=5">Mate</a>
                 </li>
               </ul>
             </li>
@@ -82,211 +101,305 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Sobre
+                BITE SIZE
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Lusmila</a></li>
-                <li><a class="dropdown-item" href="#">Agustin</a></li>
-                <li><a class="dropdown-item" href="#">Martha</a></li>
-                <li><a class="dropdown-item" href="#">Santiago</a></li>
-                <li><a class="dropdown-item" href="#">Pablo</a></li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Grupo 4 </a>
+                  <a class="dropdown-item" href="ingles1.html"
+                    >The Origin of the “Torta frita” Festival</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ingles2.html"
+                    >Mate National Festival</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ingles3.html"
+                    >Best kept Secret</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ingles4.html"
+                    >400 Years of Uruguayan Tradition</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ingles5.html"
+                    >A journey between two worlds(by Pablo)</a
+                  >
                 </li>
               </ul>
             </li>
           </ul>
+          <img
+            class="logouru"
+            src="front/imagenes/uru.png"
+            width="100"
+            height="auto"
+            alt="Logo"
+          />
         </div>
       </div>
     </nav>
     <main>
       <!-- Sección principal de cabecera con un contenedor Bootstrap -->
-      <hero class="container my-5">
-        <h1 class="">
-          <!-- Imagen del título del sitio -->
-          <img
-            class="cabecera"
-            src="front/imagenes/Saborfinal.png"
-            alt="titulo"
-          />
-        </h1>
-      </hero>
-      <section class="container-bienvenida">
-        <p class="bienvenida">
-          ¡Bienvenidos a Sabor Oriental! A través de las páginas de esta
-          revista, los invitamos a emprender un viaje único en el tiempo para
-          descubrir la rica identidad de nuestra mesa. Sabor Oriental nace con
-          el propósito de explorar el corazón de la cocina uruguaya, revelando
-          la historia, los secretos y el origen de esos platos y postres
-          tradicionales que nos unen y nos definen. Desde la mística detrás de
-          un clásico chivito hasta las dulces leyendas que envuelven al Martín
-          Fierro o al asado de los domingos, cada artículo es un homenaje a las
-          raíces e influencias que moldearon nuestro paladar criollo. Sabor
-          Oriental: la revista donde cada plato tiene una historia que contar.
-          ¡Que disfruten el viaje y buen provecho!
-        </p>
-      </section>
-
-      <div id="carouselExampleDark" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="row align-items-center">
-                <!-- Imagen -->
-
-                <div class="col-md-6">
-                  <img
-                    src="front/imagenes/asado.jpg"
-                    class="img-fluid"
-                    alt="Asado"
-                  />
-                </div>
-
-                <!-- Texto -->
-                <div class="col-md-6">
-                  <h2>Asado</h2>
-                  <p>
-                    El asado es uno de los sabores más representativos de
-                    Uruguay, preparado a la parrilla con carne vacuna de alta
-                    calidad.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row align-items-center">
-                <div class="col-md-6">
-                  <img
-                    src="front/imagenes/matecard.png"
-                    class="img-fluid"
-                    alt="Mate"
-                  />
-                </div>
-
-                <div class="col-md-6">
-                  <h2>Mate</h2>
-                  <p>
-                    Bebida tradicional que forma parte de la vida cotidiana y la
-                    identidad uruguaya.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row align-items-center">
-                <div class="col-md-6">
-                  <img
-                    src="front/imagenes/torta.png"
-                    class="img-fluid"
-                    alt="Mate"
-                  />
-                </div>
-
-                <div class="col-md-6">
-                  <h2>Torta frita</h2>
-                  <p>
-                    Bebida tradicional que forma parte de la vida cotidiana y la
-                    identidad uruguaya.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row align-items-center">
-                <div class="col-md-6">
-                  <img
-                    src="front/imagenes/chivito.png"
-                    class="img-fluid"
-                    alt="Mate"
-                  />
-                </div>
-
-                <div class="col-md-6">
-                  <h2>Chivito</h2>
-                  <p>
-                    Bebida tradicional que forma parte de la vida cotidiana y la
-                    identidad uruguaya.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row align-items-center">
-                <div class="col-md-6">
-                  <img
-                    src="front/imagenes/Alfajor.png"
-                    class="img-fluid"
-                    alt="Dulce de leche"
-                  />
-                </div>
-
-                <div class="col-md-6">
-                  <h2>Dulce de leche</h2>
-                  <p>
-                    Uno de los productos más populares de la repostería
-                    uruguaya.
-                  </p>
-                </div>
-              </div>
-            </div>
+      <section class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <img
+              class="cabecera container mx-auto d-block"
+              src="front/imagenes/Sabormejorcalidad.jpg"
+              alt="titulo"
+            />
           </div>
         </div>
+      </section>
+      <section class="video-spotlight section-block container my-5 text-center">
+        <div class="video-card shadow-sm rounded-4 p-3 mx-auto">
+          <video
+            id="video-bucle"
+            class="video-card-video"
+            src="front/imagenes/mate.mp4"
+            autoplay
+            muted
+            playsinline
+          ></video>
+        </div>
+      </section>
 
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="prev"
+      <section class="section-block container my-4 text-center">
+        <p class="bienvenida mb-0">
+          ¡Bienvenidos a Sabor Oriental! "Nuestra misión es preservar y
+          compartir la auténtica tradición gastronómica uruguaya a través de
+          productos emblemáticos como el asado, las tortas fritas, los
+          alfajores, el mate y el postre chajá. Nos dedicamos a honrar el
+          verdadero sabor oriental y recetas heredadas que evocan el calor del
+          hogar, el encuentro con amigos y el orgullo de nuestras raíces.
+          Queremos que cada bocado y cada cebada sean una experiencia que
+          conecte a nuestra gente con lo mejor de nuestra cultura."
+        </p>
+      </section>
+      <section
+        class="section-block container my-5 text-center carousel-wrapper"
+      >
+        <div
+          id="carouselExampleDark"
+          class="carousel slide carousel-dark mx-auto"
         >
-          <span class="carousel-control-prev-icon"></span>
-        </button>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a
+                href="/articulo.html?id=3"
+                style="text-decoration: none; color: inherit"
+              >
+                <div class="container">
+                  <div class="row align-items-center">
+                    <!-- Imagen -->
 
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </div>
-      <!-- Secciones vacías para futuros artículos o contenido adicional -->
-      <section class="articulo1"></section>
-      <section class="articulo2"></section>
-      <section class="articulo3"></section>
-      <section class="articulo4"></section>
-      <section class="articulo5"></section>
-      <div id="grilla-articulos" class="row"></div>
+                    <div class="col-md-6">
+                      <img
+                        class="carrousel-imagen img-fluid"
+                        src="front/imagenes/asado.jpg"
+                        alt="Asado"
+                      />
+                    </div>
+
+                    <!-- Texto -->
+                    <div class="col-md-6">
+                      <h2>Asado</h2>
+                      <p>
+                        El rey de nuestra parrilla. Cortes seleccionados
+                        cocinados lentamente a las brasas para lograr esa
+                        jugosidad única y el indiscutible sabor de nuestra
+                        tradición. Ideal para compartir en familia o con amigos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="/articulo.html?id=5"
+                style="text-decoration: none; color: inherit"
+              >
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <img
+                        class="carrousel-imagen img-fluid"
+                        src="front/imagenes/matecarruselfin.png"
+                        alt="Mate"
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <h2>Mate</h2>
+                      <p>
+                        Mucho más que una infusión: nuestra cultura en cada
+                        cebada. Seleccionamos la mejor yerba para ofrecerte un
+                        mate equilibrado, rendidor y con el amargor justo que
+                        nos acompaña a todos lados
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="/articulo.html?id=1"
+                style="text-decoration: none; color: inherit"
+              >
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <img
+                        class="carrousel-imagen img-fluid"
+                        src="front/imagenes/torta.png"
+                        alt="Torta frita"
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <h2>Torta frita</h2>
+                      <p>
+                        El clásico de los días de lluvia (¡y de los soleados
+                        también!). Doradas, crujientes por fuera, esponjosas por
+                        dentro y espolvoreadas con azúcar. El mimo perfecto para
+                        cualquier tarde.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="/articulo.html?id=2"
+                style="text-decoration: none; color: inherit"
+              >
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <img
+                        class="carrousel-imagen img-fluid"
+                        src="front/imagenes/PostreChajá.jpg"
+                        alt="Postre Chajá"
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <h2>Postre Chajá</h2>
+                      <p>
+                        El orgullo de Paysandú para el mundo. Una explosión de
+                        texturas que combina el suave bizcochuelo, crema de
+                        leche, trozos de durazno y el toque crocante e
+                        inconfundible del merengue seco.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="/articulo.html?id=4"
+                style="text-decoration: none; color: inherit"
+              >
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <img
+                        class="carrousel-imagen img-fluid"
+                        src="front/imagenes/alfajor1.png"
+                        alt="Alfajor"
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <h2>Alfajor</h2>
+                      <p>
+                        La combinación perfecta de dos galletas suaves que
+                        abrazan un generoso y tierno corazón de dulce de leche,
+                        todo cubierto por una fina capa de chocolate o merengue.
+                        Un viaje de ida en cada bocado.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </section>
+      <section class="section-block container my-4 text-center">
+        <p class="mb-0">
+          Somos un grupo de estudiantes de ÁNIMA unidos por una pasión:
+          redescubrir las raíces de nuestra identidad. A través de esta revista,
+          nos proponemos ser una ventana al Sabor Oriental, invitando a nuestros
+          lectores a explorar la riqueza de la cultura uruguaya desde su
+          gastronomía. Más allá de encender el fuego para el asado, aprontar un
+          buen mate, amasar unas tortas fritas en días de lluvia, o disfrutar de
+          la dulzura de un chajá y un alfajor, buscamos informar y preservar la
+          historia detrás de cada bocado. Nuestro objetivo es rescatar los
+          orígenes de estos sabores tradicionales, conectando el pasado con el
+          presente para valorar lo que nos une y nos identifica como país.
+        </p>
+      </section>
+      <section class="section-block container my-5 text-center">
+        <div class="spotify-container mx-auto">
+          <iframe
+            data-testid="embed-iframe"
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/4Pm4FEvvLgqQ9WMSX7gNVz?utm_source=generator&si=3fb3e5ff7b4f4945"
+            frameborder="0"
+            allowfullscreen=""
+            allow="
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              fullscreen;
+              picture-in-picture;
+            "
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
       <!-- Pie de página del sitio -->
-      <footer>
-        <footer class="mt-5 footer-sabor-oriental">
-          <div class="footer-container">
-            <div class="footer-section sobre-nosotros">
-              <h3>Sabor Oriental</h3>
+
+      <footer class="mt-5 footer-sabor-oriental">
+        <span class="footer-container">
+          <div class="footer-section sobre-nosotros">
+            <span class="footerizquierda">
+              <h3 class="footer-titulo">Sabor Oriental</h3>
               <p>
                 Descubriendo las historias, la cultura y la gastronomía que unen
                 a Uruguay con el mundo.
               </p>
               <p class="ubicacion">📍 Montevideo, Uruguay</p>
-            </div>
-
-            <div class="footer-section enlaces">
-              <h4>Navegación</h4>
-              <ul>
-                <li><a href="contacto.html">Contacto</a></li>
-              </ul>
-            </div>
-
+            </span>
+          </div>
+          <span class="footerderecha">
             <div class="footer-section contacto-redes">
               <h4>Contacto</h4>
               <p>
@@ -301,22 +414,22 @@
                 <a href="#" target="_blank">YouTube</a>
               </div>
             </div>
-          </div>
-
-          <div class="footer-bottom">
-            <p>&copy; 2026 Sabor Oriental. Todos los derechos reservados.</p>
-          </div>
-        </footer>
-        <!-- Sección de clima en index.html -->
-        <section class="py-3 bg-light border-bottom">
-          <div class="container">
-            <div id="clima" class="text-center">
-              <p class="text-muted mb-0">Cargando clima...</p>
-            </div>
-          </div>
-        </section>
+          </span>
+        </span>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Sabor Oriental. Todos los derechos reservados.</p>
+        </div>
       </footer>
+      <!-- Sección de clima en index.html -->
+      <section class="py-3 bg-light border-bottom">
+        <div class="container">
+          <div id="clima" class="text-center">
+            <p class="text-muted mb-0">Cargando clima...</p>
+          </div>
+        </div>
+      </section>
     </main>
+
     <!-- JavaScript de Bootstrap para funcionalidad de componentes -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
