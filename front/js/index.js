@@ -82,31 +82,6 @@ function emojiClima(code) {
   if (code <= 82) return "️";
   return "⚡";
 }
-async function cargarClima() {
-  const clima = document.querySelector("#clima");
-  try {
-    const response = await fetch(
-      "https://api.open-meteo.com/v1/forecast" +
-        "?latitude=-34.9&longitude=-56.17&current_weather=true",
-    );
-    if (!response.ok) throw new Error("Error al obtener el clima");
-    const datos = await response.json();
-    const temp = datos.current_weather.temperature;
-    const viento = datos.current_weather.windspeed;
-    const emoji = emojiClima(datos.current_weather.weathercode);
-    clima.innerHTML = `
-<p class="mb-0">
-${emoji} Montevideo — <strong>${temp}°C</strong>
-&nbsp;|&nbsp;
-💨 Viento: ${viento} km/h
-</p>
-`;
-  } catch (error) {
-    clima.innerHTML = `<p class="text-muted mb-0">Clima no
-disponible.</p>`;
-    console.error(error);
-  }
-}
 document.querySelectorAll(".dropdown").forEach((dropdown) => {
   dropdown.addEventListener("shown.bs.dropdown", () => {
     const items = dropdown.querySelectorAll(".dropdown-menu li");
