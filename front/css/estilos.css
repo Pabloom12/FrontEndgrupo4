@@ -213,6 +213,14 @@ p {
   color: black;
 }
 
+.carousel-control-prev {
+  left: -3.5rem;
+}
+
+.carousel-control-next {
+  right: -3.5rem;
+}
+
 .carousel-item h2 {
   color: #d35400; /* Color temático más cálido */
   margin-bottom: 20px;
@@ -275,14 +283,16 @@ p {
   background-color: #1a1a1a;
   color: #ccc;
   margin-top: 60px;
-  padding: 60px 20px;
+  padding: 60px 0;
 }
 .footer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 20px;
 }
 
 .footerizquierda {
@@ -310,6 +320,18 @@ p {
 
   .carousel-item {
     padding: 24px;
+  }
+
+  .carousel-control-prev {
+    left: -1rem;
+  }
+
+  .carousel-control-next {
+    right: -1rem;
+  }
+
+  .footer-container {
+    padding: 0 16px;
   }
 
   .navbar .navbar-nav {
